@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging in JavaScript</title>
+</head>
+<body>
+    <h1>Debugging in JavaScript</h1>
+
+
+    <script>
+//         function calculateSum(a, b) {
+//   console.log("Calculating sum of " + a + " and " + b + "...");
+//   let sum = a + b;
+//   console.log("Sum is: " + sum);
+//   return sum;
+// }
+
+// let x = 3;
+// let y = 7;
+// let result = calculateSum(x, y);
+// console.log("Result is: " + result);
+
+
+
+
+// function calculateSum(a, b) {
+//   let sum = a + b;
+//   debugger; // <-- set a breakpoint here
+//   return sum;
+// }
+
+// let z = 3;
+// let w = 7;
+// let result = calculateSum(z, w);
+// console.log("Result is: " + result);
+
+
+
+//Error Types and Handling//
+
+function divideByZero(num) {
+  if (num === 0) {
+    throw new Error('Cannot divide by zero!');
+  }
+  return 10 / num;
+}
+
+try {
+  console.log(divideByZero(0));
+} catch (error) {
+  console.error(error.message);
+}
+
+
+
+    </script>
+</body>
+</html>
